@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/60d8301dd2.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+              'gradiant-right': '#FF8938',
+                'gradiant-to': '#da373d',
+                'back':'#FF4240',
+                
+              }
+            }
+          }
+        }
+      </script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+    </style>
+
+</head>
+<body>
+    <!-- header start here -->
+    <header class="lg:mx-32 lg:py-14">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247] font-manrope">
+                    <li><a><span class="text-back font-bold">Home</span></a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+              </div>
+             
+              <h1 class="font-extrabold text-2xl lg:text-4xl font-manrope">Hockey<span class="text-back">’</span>s</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1  text-[#424247] font-manrope">
+                <li><a><span class="text-back font-bold">Home</span></a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end gap-3">
+                <img class="hidden md:hidden lg:flex" src="Images/Frame.png" alt="">
+              <a class="btn bg-back text-white text-semibold font-manrope">Get Ticket</a>
+            </div>
+          </div>
+    </header>
+    
+    <main>
+   <!-- slider start here -->
+   <section class="mx-5 lg:mx-32 mb-24">
+   <div class="relative">
+    <div class="carousel w-full h-[200px] lg:h-[550px]">
+        <div id="slide1" class="carousel-item relative w-full">
+        
+            <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex lg:transform lg:-translate-y-1/2 left-[35%] md:left-[45%] lg:left-5 bottom-5 lg:bottom-0 gap-4 ">
+            <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+            <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+          </div>
+          
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/2.png" class="w-full" />
+          <div class="absolute flex lg:transform lg:-translate-y-1/2 left-[35%] md:left-[45%] lg:left-5 bottom-5 lg:bottom-0 gap-4 ">
+            <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+            <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/3.png" class="w-full" />
+          <div class="absolute flex lg:transform lg:-translate-y-1/2 left-[35%] md:left-[45%] lg:left-5 bottom-5 lg:bottom-0 gap-4 ">
+            <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+            <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/4.png" class="w-full" />
+          <div class="absolute flex lg:transform lg:-translate-y-1/2 left-[35%] md:left-[45%] lg:left-5 bottom-5 lg:bottom-0 gap-4 ">
+            <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
+            <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="lg:absolute bottom-8 right-8">
+        <div class="bg-[#131318] text-white gap-4 p-4 lg:p-8 rounded-lg  md:w-[300px] lg:w-[510px]">
+            <h3 class="font-extrabold font-lg lg:text-2xl font-manrope">Meet all the heroes from the field</h3>
+            <p class="font-medium font-manrope">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+      </div>
+   </div>
+   </section>
+    </main>
+</body>
+</html>
