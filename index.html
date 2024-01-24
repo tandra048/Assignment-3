@@ -78,7 +78,7 @@
     <div class="carousel w-full h-[200px] lg:h-[550px]">
         <div id="slide1" class="carousel-item relative w-full">
         
-            <img src="Images/1.png" class="w-full" />
+            <img src="Images/1.png" class="w-full lg:w-full" />
           <div class="absolute flex lg:transform lg:-translate-y-1/2 left-[35%] md:left-[45%] lg:left-5 bottom-5 lg:bottom-0 gap-4 ">
             <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
             <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
@@ -404,7 +404,7 @@
   </div>
  </section>
  <!-- get in touch section -->
- <section class="lg:mx-32 my-24 ">
+ <section class="mx-2 lg:mx-32 my-24 ">
   <hr>
   <div class="text-center py-8">
     <h1 class="text-4xl font-extrabold font-manrope pb-6">Get In Touch</h1>
@@ -413,7 +413,7 @@
   <hr class="pb-10">
   <div class="grid grid-flow-row justify-between">
     <div class="grid grid-flow-row lg:grid-flow-col col-span-5 gap-6">
-      <div class="col-span-5 w-full  lg:col-span-2">
+      <div class="col-span-5 w-full lg:w-[374px] lg:col-span-2">
         <div class="flex flex-col  gap-y-6">
           <div class="p-8 bg-[#BCED6D1A] rounded-xl">
             <img src="Images/Group 1171275317.png" alt="">
@@ -439,21 +439,21 @@
    <div class="flex flex-col lg:flex-row gap-6">
     <div class="pb-4">
       <label for="name" class="text-xl font-bold ">Your Name</label><br>
-    <input type="text" placeholder="Enter your name"class="input bg-[#13131808] , rounded-xl w-[324px] ">
+    <input type="text" placeholder="Enter your name"class="input bg-[#13131808] , rounded-xl w-full lg:w-[324px] ">
     </div>
   <div>
     <label for="name" class="text-xl font-bold">Your Email</label><br>
-    <input type="text" placeholder="Enter your email" class="input bg-[#13131808] , rounded-xl w-[324px]">
+    <input type="text" placeholder="Enter your email" class="input bg-[#13131808] , rounded-xl w-full lg:w-[324px]">
   </div>
    </div>
       <div class="flex flex-col lg:flex-row gap-6">
        <div class="">
         <label for="name" class="text-xl font-bold">Subject</label><br>
-        <input type="text" placeholder="Enter your subject" class="input bg-[#13131808] , rounded-xl w-[324px] ">
+        <input type="text" placeholder="Enter your subject" class="input bg-[#13131808] , rounded-xl w-full lg:w-[324px] ">
        </div>
       <div class="">
         <label for="name" class="text-xl font-bold">Phone Number</label><br>
-      <input type="text" placeholder="Enter your phone number" class="input bg-[#13131808] , rounded-xl w-[324px]">
+      <input type="text" placeholder="Enter your phone number" class="input bg-[#13131808] , rounded-xl w-full lg:w-[324px]">
       </div>
       </div>
     </form>
@@ -478,5 +478,41 @@
 </div>
  </section>
     </main>
+
+    <!-- footer section start here -->
+    <footer class="footer p-10 bg-black text-white text-base-content">
+      <aside>
+        <h3 class="text-3xl font-extrabold font-manrope">Get In Touch</h3>
+        <p class="font-manrope font-medium">Have a question? Drop us a line, whether an email or a <br>phone call, we will be here with some answers! </p>
+        <div class="flex gap-4">
+          <i class="fa-regular fa-envelope text-red-600"></i>
+          <p>hockeys@support.com</p>
+        </div>
+        <div class="flex gap-4">
+          <i class="fa-solid fa-phone text-red-600"></i>
+          <p>(+62) 123-321-543</p>
+        </div>
+      </aside> 
+      <nav>
+        <header class="footer-title">Services</header> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Company</header> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Legal</header> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
 </body>
 </html>
